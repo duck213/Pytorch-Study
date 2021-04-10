@@ -5,7 +5,6 @@ import torch.optim as optim
 
 torch.manual_seed(1)  # for reproducibility
 
-
 # Data definition
 x_train = torch.FloatTensor([[1], [2], [3]])
 y_train = torch.FloatTensor([[1], [2], [3]])
@@ -46,7 +45,6 @@ x_train = torch.FloatTensor([[1], [2], [3]])
 y_train = torch.FloatTensor([[1], [2], [3]])
 
 
-
 # Model initialization
 model = LinearRegressionModel()
 
@@ -70,4 +68,6 @@ for epoch in range(epoch_num + 1):
         b = params[1].item()
         print('epoch {:4d}/{} W: {:.3f}, b: {:.3f}, Cost: {:.6f}'
               .format(epoch, epoch_num, W, b, cost.item()))
+
+
 
